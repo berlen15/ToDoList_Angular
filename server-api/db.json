@@ -1,0 +1,21 @@
+{
+  "tasks": [
+    {
+      "id": 11,
+      "title": "cargar",
+      "completed": false
+    },
+    {
+      "id": 12,
+      "title": "esto es magia",
+      "completed": false
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ]
+}

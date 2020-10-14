@@ -1,0 +1,19 @@
+<div class="container">
+
+  <div class="jumbotron">
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nueva tarea</label>
+      <input [(ngModel)]="newTask.title" type="text" class="form-control mb-2">
+      <button (click)="addTask()" type="button" class="btn btn-success">Guardar</button>
+    </div>
+  </div>
+  <div class="jumbotron mt-4">
+    <div class="form-group" *ngFor="let task of tasks">
+      <input type="text" [(ngModel)]="task.title" class="form-control mb-2" readOnly>
+      <button (click)="editTask(task)" type="button" class="btn btn-secondary">Editar</button>
+      <button (click)="deleteTask(task.id)" type="button" class="btn btn-danger ml-2">Borrar</button>
+
+    </div>
+  </div>
+</div>
